@@ -24,4 +24,8 @@
     <bean id="error" class="org.springframework.web.servlet.view.JstlView">
         <property name="url" value="/WEB-INF/jsp/error.jsp"/>
     </bean>
+
+    <bean id="profile" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="/WEB-INF/jsp/profile.jsp"/>
+    </bean>
 </beans>

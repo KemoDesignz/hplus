@@ -32,15 +32,15 @@ public class ApplicationConfig extends WebMvcConfigurationSupport {
         configurer.setTaskExecutor(getTaskExecutor());
         configurer.setDefaultTimeout(5000);
     }
-//    @Bean
-//    public InternalResourceViewResolver jspViewResolver() {
-//        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-//        viewResolver.setPrefix("/WEB-INF/jsp/");
-//        viewResolver.setSuffix(".jsp");
-//        viewResolver.setViewClass(JstlView.class);
-//
-//        return viewResolver;
-//    }
+    @Bean
+    public InternalResourceViewResolver jspViewResolver() {
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/jsp/");
+        viewResolver.setSuffix(".jsp");
+        viewResolver.setViewClass(JstlView.class);
+
+        return viewResolver;
+    }
 
     @Bean
     public AsyncTaskExecutor getTaskExecutor() {

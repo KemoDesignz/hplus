@@ -44,9 +44,9 @@
 	<!-- guarantee -->
             <c:if test="${!empty(products)}">
     		<section id="products" class="section">
-			<c:forEach var="product" items="${products}">
     		<div class="productContainer">
-                           
+				<c:forEach var="product" items="${products}">
+
 				<div class="productContainerItem">
 					<img id="pic1" src="${product.imagePath}">
 					<input type="text" name="product"
